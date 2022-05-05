@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Sorting Algorithms
+{% endblock %}
+
+{% block imports %}
+<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/sorts/favicon.ico')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sorts/custom.css') }}">
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/sorts/d3.v7.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/sorts/custom.js') }}" defer></script>
+{% endblock %}
+
+
+{% block content %}
+<div class='container'>
+	<br>
+	<h1 class="container-fluid d-flex flex-column justify-content-center align-items-center" >Sorting Algorithm Visualizer</h1>
+	<br>
+	<fieldset id="inputfieldset">
+		<div class="input-group input-group-lg" id="inputGroup">
+			<span class="input-group-text"># of Elements:</span>
+			<input type="number" min="0" max="1000" step ="1" value="100" class="form-control" id="arrayLen" onchange="reloadArray()">
+			<span class="input-group-text">Range Min:</span>
+			<input type="number" min="0" step ="1" value="0"   class="form-control" id="arrayMin" onchange="reloadArray()">
+			<span class="input-group-text">Range Max:</span>
+			<input type="number" min="0" step ="1" value="100" class="form-control" id="arrayMax" onchange="reloadArray()">
+
+			<select class="form-select" id="sortMethodOption">
+			  <option value="0" selected>--Select Sort--</option>
+			  <option value="1">Bubble Sort</option>
+			  <option value="2">Selection Sort</option>
+			  <option value="3">Insertion Sort</option>
+			</select>
+
+			<button type="button" class="btn btn-primary" onclick="reloadArray()" id="reloadButton"> Reload </button>
+			<button type="button" class="btn btn-success" onclick="sort()" id="runButton"> Run </button>
+		</div>
+	</fieldset>
+	<label for="delayRange">Step Delay: <span id='delayRangeDisplay'></span> ms</label>
+	<input type="range" class="form-range" min="0" max="1000" step="100" value='100' oninput="updateDisplay()" onchange='visualizeArray()' id="delayRangeInput">
+</div>
+
+<svg></svg>
+{% endblock %}

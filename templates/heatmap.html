@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+	Heat Map Visualization
+{% endblock %}
+
+{% block imports %}
+	<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/heatmap/favicon.ico')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/heatmap/custom.css')}}">
+	
+	<script type="text/javascript" src="{{ url_for('static', filename='js/heatmap/d3.v3.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/heatmap/custom.js') }}" defer></script>
+{% endblock %}
+
+
+{% block content %}
+	<div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+		<h1>Finite Difference Discretization of Heat Transfer Equations</h1>
+	</div>
+	<svg></svg>
+{% endblock %}

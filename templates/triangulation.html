@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+	Polygon Triangulation
+{% endblock %}
+
+{% block imports %}
+	<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/triangulation/favicon.ico')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/triangulation/custom.css')}}">
+	
+	<script type="text/javascript" src="{{ url_for('static', filename='js/triangulation/d3.v5.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/triangulation/custom.js') }}" defer></script>
+{% endblock %}
+
+
+{% block content %}
+	
+	<div class='container' class="row">
+		<h1>Triangulation Visualization</h1>
+		<fieldset id="inputfieldset">
+			<div class="input-group input-group-lg" id="inputGroup">
+				<span class="input-group-text">Distance: <span style="width: 45px;" id="slider_value">100</span></span>
+				<input type="range" class="form-control form-range" id="delayRangeInput" 
+						min="10" max="250" step="10" value='100' oninput="set_radius(this.value)" >
+	
+				<button type="button" class="btn btn-primary" onclick="reset()" id="resetButton"> Reload </button>
+				<button type="button" class="btn btn-success" onclick="ear_slice()" id="runButton"> Run </button>
+			</div>
+		</fieldset>
+		
+	</div>
+
+	<svg></svg>
+	
+{% endblock %}
+
+
