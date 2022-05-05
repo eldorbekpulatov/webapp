@@ -1,0 +1,26 @@
+body {
+position: relative;
+width: 960px;
+}
+
+svg {
+font: 10px sans-serif;
+/* shape-rendering: crispEdges; */
+}
+
+rect {
+fill: steelblue;
+}
+
+.axis path, .axis line {
+fill: none;
+stroke: #fff
+}
+
+.bar {
+fill: pink;
+}
+
+.bar:hover {
+fill: steelblue;
+}

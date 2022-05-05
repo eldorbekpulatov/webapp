@@ -1,0 +1,11 @@
+﻿Project,SB Type,Project Health,Schematic Review request,SB Schematic Review Complete,First Proto Fabout,Initial SB Drop,Successful SB Bring up,Post HW/SWIT,HW/SWIT Complete,Final SB Drop,DTHO,FCS,Effort,ML Resource,FPGA Resource,Notes
+ASR9K RP3-X/RSP5-X Sigma,AIKIDO,●,9-Jun-21,22-Jun-21,28-Jun-21,13-Sep-21,3-Oct-21,12-Oct-21,7-Feb-22,7-Feb-22,14-Mar-22,24-Jun-22,Low,,,
+ASR9K RP3-X/RSP5-X BetaX,FPGASB,●,9-Jun-21,22-Jun-21,21-Jun-21,13-Sep-21,3-Oct-21,12-Oct-21,21-Dec-21,7-Feb-22,14-Mar-22,24-Jun-22,Low,,,
+ASR9K RP3-X/RSP5-X OrionX,FPGASB,●,9-Jun-21,22-Jun-21,28-Jun-21,13-Sep-21,12-Oct-21,21-Oct-21,18-Jan-22,7-Feb-22,14-Mar-22,24-Jun-22,Low,,,
+ASR9K RP3-X/RSP5-X ZenithX,FPGASB,●,9-Jun-21,22-Jun-21,28-Jun-21,13-Sep-21,12-Oct-21,21-Oct-21,23-Nov-21,7-Feb-22,14-Mar-22,24-Jun-22,Low,,,
+Firepower 4K Warwick Ave,AIKIDO,●,19-Mar-21,7-Apr-21,15-Aug-21,25-Aug-21,15-Oct-21,15-Sep-21,21-Jan-22,,,2-May-23,Med/High,,,AKD 15 from AKD7
+Meraki Holstein MS,AIKIDO,●,17-Jun-21,1-Jul-21,17-Sep-21,22-Nov-21,21-Jan-22,9-Feb-22,25-Feb-22,25-Feb-22,21-Jun-22,1-Nov-22,High,,,
+N9K Edelweiss,AIKIDO,●,,,25-Nov-20,10-Jan-21,19-Apr-21,17-May-21,13-Dec-21,,22-Jan-22,2-Jul-22,Low,,,
+N9K MDS Nellis,AIKIDO,●,10-Jan-21,25-Jan-21,15-Mar-21,19-Apr-21,,17-May-21,15-Nov-21,,28-Feb-22,21-Apr-22,Low,,,
+Spitfire/Cisco8K Letour (Atlas),AIKIDO,●,12-Aug-21,9-Sep-21,21-Oct-21,30-Dec-21,10-Feb-22,24-Feb-22,10-Mar-22,23-May-22,20-Jun-22,26-Jan-23,High,,,
+UCS Beverly Frankfurt,AIKIDO,●,23-Jun-21,21-Jul-21,1-Sep-21,10-Nov-21,22-Dec-21,5-Jan-22,19-Jan-22,4-Mar-22,1-Apr-22,15-May-22,High,,,

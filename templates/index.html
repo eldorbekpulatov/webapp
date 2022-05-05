@@ -2,7 +2,7 @@
 
 
 {% block title %}
-	Eldor Bekpulatov
+	Eldor Bekpulatov's Project Portfolio Overview
 {% endblock %}
 
 {% block favicon %}
@@ -11,7 +11,9 @@
 
 
 {% block content %}
+	<svg></svg>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/custom.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='js/index/d3.v4.min.js') }}"></script>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/index/custom.js') }}"></script>
 {% endblock %}
 
